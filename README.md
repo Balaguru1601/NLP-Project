@@ -5,8 +5,8 @@ A Natural Language Processing (NLP) based tool designed to identify unexplained 
 
 ## 👥 Team Members
 
-- Balaguru Sethuraman (BXS230069)
-- Somesh Kennedy (SXK240047)
+- Balaguru Sethuraman
+- Somesh Kennedy
 
 ## 🎯 Project Goals
 
