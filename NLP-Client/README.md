@@ -1,54 +1,77 @@
-# React + TypeScript + Vite
+# Resume Classification System - Client
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the client-side application for the **Resume Classification System**, built using **React** and **TypeScript**. The application allows users to upload their resumes, get a predicted job role, download a newly generated resume tailored to that role, and browse relevant job listings.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   **Resume Upload:** Users can upload a resume in PDF or DOCX format.
+-   **Role Prediction:** The system predicts the most suitable job role based on the content of the uploaded resume.
+-   **AI-Generated Resume:** Based on the predicted role, a new professional resume is generated in LaTeX format and converted to PDF. The user can download the Resume if required.
+-   **Job Recommendations:** Users receive relevant job openings based on the predicted job role.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+-   **React**: A JavaScript library for building user interfaces.
+-   **TypeScript**: A superset of JavaScript that adds static types to improve the development experience.
+-   **Axios**: For making HTTP requests to the Flask backend.
+-   **File Upload Handling**: To manage resume file uploads.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Prerequisites
+
+Before you can run this project, ensure you have the following installed:
+
+-   [Node.js](https://nodejs.org/) (v14 or higher)
+-   [npm](https://www.npmjs.com/) (Node package manager)
+-   [React](https://reactjs.org/) (via Create React App)
+
+## Getting Started
+
+### 1. Clone the Repository
+
+Clone the repository to your local machine:
+
+```bash
+git clone https://github.com/Balaguru1601/NLP-Project.git
+cd NLP-Project/NLP-Client
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Install Dependencies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Install the necessary dependencies by running the following command:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install
+```
+
+### 3. Start the Development Server
+
+To start the development server, run:
+
+```bash
+npm start
+```
+
+This will start the application on [http://localhost:5173](http://localhost:5173).
+
+### 4. Folder Structure
+
+The folder structure of the client-side application is as follows:
+
+```
+NLP-Client/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Upload.tsx
+│   │   ├── Intro.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Navbar.tsx
+│   │   ├── SectionA.tsx
+│   │   ├── SectionB.tsx
+│   │   ├── PdfViewer.tsx
+│   │   ├── Loader.tsx
+│   │   ├── ViewJobs.tsx
+├── App.tsx
+├── main.tsx
+├── App.css
 ```
