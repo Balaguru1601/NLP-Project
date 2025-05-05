@@ -1,0 +1,24 @@
+Welcome to SmartResume: Your Personal Job Assistant
+Find Your Perfect Role, Effortlessly.
+SmartResume uses cutting-edge AI and machine learning techniques to analyze your resume, match it to suitable job roles, and suggest real-time open positions. Whether you’re a recent graduate or a seasoned professional, SmartResume helps you navigate your career with confidence.
+
+How It Works
+Analyze Your Resume
+Upload your resume and let our K-Nearest Neighbors (KNN) algorithm classify your skills, experience, and qualifications. The AI will then recommend the most suitable roles for you based on the most relevant jobs in the industry.
+
+Personalized Job Recommendations
+Using a powerful Large Language Model (LLM), SmartResume doesn’t just stop at suggesting a role. We also generate a custom resume tailored to your desired position and give you a list of real-time, open job positions that match your skills. It’s your one-stop-shop for career development.
+
+Why Choose SmartResume?
+AI-Driven Job Matching
+Our KNN model leverages advanced classification techniques to accurately suggest roles that match your skills, experience, and career aspirations.
+
+Tailored Resume Generation
+Want to apply for a specific role? Our LLM-powered tool helps you create a professional, tailored resume that highlights the right skills for the job, boosting your chances of landing an interview.
+
+Access Open Job Opportunities
+Don’t waste time searching for jobs manually. SmartResume instantly generates a list of open job roles that fit your qualifications, giving you a curated, up-to-date list of opportunities you can apply for immediately.
+
+Get Started Today
+Ready to take the next step in your career?
+Simply upload your resume, and let SmartResume do the rest. Whether you’re looking for your first job or advancing in your career, we’ve got you covered. Click the button below to get started now!

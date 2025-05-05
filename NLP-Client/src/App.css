@@ -1,0 +1,275 @@
+#root {
+	width: 100vw;
+	min-height: 100vh;
+	background-color: #04121d;
+	overflow: hidden;
+}
+
+.navbar {
+	/* background-color: #121212; */
+	/* background-color: #110e3c; */
+	background-color: #061a2a;
+	color: #f1efec;
+	padding: 1rem;
+	margin-bottom: 2rem;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 600;
+	display: flex;
+}
+
+.navbar .nav-item {
+	color: #f1efec;
+	text-decoration: none;
+	margin: 0 15px;
+	font-size: 18px;
+	width: 50%;
+	text-align: left;
+}
+
+.navbar .center {
+	text-align: center;
+	/* border-bottom: 1px solid #c0c0c0; */
+}
+
+.navbar .center span {
+	margin: 0 16px;
+}
+
+.navbar .center span:hover {
+	color: #b8b8b8;
+	cursor: pointer;
+}
+
+.intro {
+	text-align: center;
+	margin: 20px 0;
+	color: #5a1e8f;
+	background-image: linear-gradient(45deg, #5a1e8f, #87903f, #01e31a);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.intro .description {
+	font-size: large;
+	font-weight: 600;
+	padding: 0 15%;
+}
+
+.section-a {
+	display: flex;
+	margin: 5rem 2rem;
+}
+
+.section-a div {
+	width: 50%;
+}
+
+.section-a div:first-child {
+	padding-top: 2rem;
+}
+
+.section-a div:last-child {
+	padding: 2rem;
+}
+
+.section-b {
+	display: flex;
+	margin: 5rem 2rem;
+}
+
+.section-b div {
+	width: 50%;
+}
+
+/* acess first div in section b */
+.section-b div:first-child {
+	padding: 2rem;
+	padding-left: 3rem;
+}
+
+/* access second div in section b */
+.section-b div:last-child {
+	text-align: center;
+}
+
+.section-b div:last-child svg {
+	padding-top: 3rem;
+}
+
+.section-b h2,
+.section-b p,
+.section-a h2,
+.section-a p {
+	width: 80%;
+	margin-left: 10%;
+	color: #3cdda7;
+}
+
+.section-b h2,
+.section-b p {
+	color: #3cd1dd;
+}
+
+.upload-section {
+	text-align: center;
+}
+
+.upload-section button {
+	border-radius: 8px;
+	border: 1px solid transparent;
+	padding: 0.6em 1.2em;
+	font-size: 1em;
+	font-weight: 500;
+	font-family: inherit;
+	background-color: #1a1a1a;
+	cursor: pointer;
+	transition: border-color 0.25s;
+}
+
+.upload-section button:hover {
+	border-color: #c9c9c9;
+}
+
+.upload-section button:focus,
+.upload-section button:focus-visible {
+	outline: 4px auto -webkit-focus-ring-color;
+}
+
+.upload-section > button {
+	margin-top: 2rem;
+}
+
+/* Basic container styles */
+.file-upload-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	height: 300px;
+	background-color: #393e46;
+	border: 2px dashed #f1efec;
+	border-radius: 8px;
+	transition: border-color 0.3s;
+	margin: 0 auto;
+	cursor: pointer;
+	position: relative;
+}
+
+.file-upload-container.drag-active {
+	border-color: #007bff; /* Blue border when dragging a file */
+}
+
+/* Upload box styles */
+.upload-box {
+	text-align: center;
+}
+
+.upload-text {
+	font-size: 24px;
+	color: #f1efec;
+	margin-bottom: 8px;
+	font-weight: 600;
+}
+
+.or-text {
+	font-size: 14px;
+	font-weight: 500;
+	color: #c3c3c3;
+	margin: 8px 0;
+}
+
+.browse-button {
+	display: inline-block;
+	padding: 8px 16px;
+	/* background-color: #6c63ff; */
+	background-color: #04121d;
+	color: white;
+	font-size: 16px;
+	font-weight: 600;
+	border-radius: 4px;
+	cursor: pointer;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.browse-button:hover {
+	background-color: #002a55;
+}
+
+.file-input {
+	display: none; /* Hide the default file input */
+}
+
+.file-name {
+	margin-top: 12px;
+	font-size: 14px;
+	color: #e2e2e2;
+	text-align: center;
+}
+
+.file-name button {
+	margin-top: 0.5rem;
+}
+
+.file-name button:hover {
+	border-color: #9a9a9a;
+}
+
+.graphic-resume-container {
+	text-align: center;
+}
+
+.prediction {
+	text-align: center;
+	font-size: 2rem;
+}
+
+.view-jobs > h2 {
+	text-align: center;
+}
+
+.view-jobs .job-section {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+}
+
+.view-jobs .job-section {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: 1fr;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+@media (min-width: 1250px) {
+	.view-jobs .job-section {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+.footer {
+	text-align: center;
+	margin-top: 5rem;
+	padding: 2rem;
+	color: #f1efec;
+	background-color: #061a2a;
+}
+
+/* LOADER */
+
+.loader-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999; /* ensure it's on top */
+}
