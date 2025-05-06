@@ -99,11 +99,6 @@ def get_jobs(query = "",try_count = 0):
             company = article.find_element(By.XPATH, './/div/p[1]/span[1]/span').text
             location = article.find_element(By.XPATH, './/div/p[1]/span[2]').text
             description = article.find_element(By.XPATH, './/div/p[2]').text
-            # print(f"Title: {title}")
-            # print(f"Company: {company}")
-            # print(f"Location: {location}")
-            # print(f"Description: {description}")
-            # print(f"Link: {job_link}")
             all_jobs.append({
                 "title": title,
                 "company": company,
