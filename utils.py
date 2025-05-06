@@ -222,7 +222,6 @@ def predict_role_from_resume(pdf_path):
     # Remove the first and last lines
     modified_lines = lines[1:-1]  # This slices the list to remove the first and last lines
 
-    # Optionally, write the modified lines back to the file (overwrite it)
     with open("tex/" +file_name + '.tex', 'w') as file:
         file.writelines(modified_lines)
 
